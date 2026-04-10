@@ -21,8 +21,8 @@
 title: Michael Wakeham
 email: mwakeham@bu.edu
 description: homepage
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: "" # user site (mikewakeham.github.io) lives at domain root — keep empty
+url: "https://mikewakeham.github.io" # canonical URL for feeds, SEO, and absolute links
 twitter_username: jekyllrb
 github_username:  jekyll
 

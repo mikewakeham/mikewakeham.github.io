@@ -5,23 +5,25 @@
 #
 # Fields:
 #   id            — short slug for HTML id (e.g. my-paper-name)
-#   teaser        — image path from site root: assets/images/foo.png
+#   teaser        — image path: assets/images/foo.png (omit if using teaser_video)
+#   teaser_video  — optional MP4 path for looping video teaser instead of teaser image
 #   title         — full paper title (quoted if it has colons)
 #   venue         — e.g. CVPR 2026
-#   arxiv_abs     — https://arxiv.org/abs/XXXX (optional)
-#   arxiv_pdf     — https://arxiv.org/pdf/XXXX.pdf (optional)
+#   description   — optional short blurb (use instead of authors for WIP items)
+#   arxiv_abs     — https://arxiv.org/abs/XXXX (optional); “arXiv” link
+#   arxiv_pdf     — PDF URL (optional). With arxiv_abs: second link “PDF”. Alone: single “arXiv” link to this URL.
 #   project_page  — project website (optional)
 #   code_url      — GitHub or other code link (optional; omit key if none)
+#   code_label    — optional link text (default: code), e.g. "code (outdated)"
 #   authors       — list of { name: "...", url: "...", self: true, mark: "..." }
 #                   url optional; self: true = your name (underlined, no link); mark optional
 #   footnote      — optional line under authors (equal contrib., etc.)
 #
 
 - id: babyvlm-v2
-  teaser: assets/images/babyvlm_v2.png
+  teaser: assets/images/babyvlm_v2_transparent.png
   title: "BabyVLM-V2: Toward Developmentally Grounded Pretraining and Benchmarking of Vision Foundation Models"
   venue: CVPR 2026
-  arxiv_abs: https://arxiv.org/abs/2512.10932
   arxiv_pdf: https://arxiv.org/pdf/2512.10932
   project_page: https://shawnking98.github.io/BabyVLM-v2/
   authors:
@@ -49,3 +51,11 @@
     - { name: "Venkatesh Saligrama", url: "https://venkatesh-saligrama.github.io/" }
     - { name: "Boqing Gong", url: "https://boqinggong.github.io/" }
   footnote: "*Equal contribution. †Project lead. ‡Equal contribution; work done as interns at Boston University."
+
+- id: panorama
+  teaser_video: assets/images/panorama_teaser.mp4
+  title: "Panoramic Generation for Perspective Videos with Camera Motion"
+  venue: In progress...
+  description: "3D-driven training-free method for panoramic outpainting of regular perspective videos with camera motion + static scene."
+  code_url: https://github.com/mikewakeham/pano
+  code_label: "code (outdated)"

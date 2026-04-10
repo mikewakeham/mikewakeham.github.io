@@ -1,0 +1,22 @@
+<script>
+(function () {
+  function skip(href) {
+    if (!href) return true;
+    var h = href.trim();
+    if (h.startsWith('mailto:') || h.startsWith('tel:') || h.startsWith('javascript:')) return true;
+    if (h === '#' || h === '') return true;
+    if (h.charAt(0) === '#' && h.indexOf('/') === -1) return true;
+    return false;
+  }
+  document.addEventListener('DOMContentLoaded', function () {
+    document.querySelectorAll('a[href]').forEach(function (a) {
+      if (skip(a.getAttribute('href'))) return;
+      a.setAttribute('target', '_blank');
+      var rel = (a.getAttribute('rel') || '').trim();
+      if (!/\bnoopener\b/.test(rel)) {
+        a.setAttribute('rel', (rel + ' noopener noreferrer').trim());
+      }
+    });
+  });
+})();
+</script>

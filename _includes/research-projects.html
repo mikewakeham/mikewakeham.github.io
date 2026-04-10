@@ -1,30 +1,41 @@
 <section class="research-section" aria-labelledby="research-heading">
   <hr class="section-hr" />
-  <h2 id="research-heading" class="research-heading">Research</h2>
+  <h2 id="research-heading" class="research-heading">Research / Projects</h2>
 
   {% for project in site.data.projects %}
   <article class="project-card" id="project-{{ project.id }}">
     <div class="project-teaser">
-      <a href="{{ project.project_page | default: project.arxiv_abs }}" class="project-teaser-link">
+      <div class="project-teaser-inner">
+        {% if project.teaser_video %}
+        <video class="project-teaser-video" autoplay muted loop playsinline disablePictureInPicture>
+          <source src="{{ project.teaser_video | relative_url }}" type="video/mp4" />
+        </video>
+        {% else %}
         <img src="{{ project.teaser | relative_url }}" alt="" loading="lazy" />
-      </a>
+        {% endif %}
+      </div>
     </div>
     <div class="project-body">
       <h3 class="project-title">{{ project.title }}</h3>
       <p class="project-venue">{{ project.venue }}</p>
+      {% if project.authors %}
       <p class="project-authors">
         {% for a in project.authors %}
           {% if a.self %}<span class="author-name-self">{{ a.name }}</span>{% elsif a.url %}<a class="custom-link" href="{{ a.url }}">{{ a.name }}</a>{% else %}{{ a.name }}{% endif %}{% if a.mark %}<span class="author-mark">{{ a.mark }}</span>{% endif %}{% unless forloop.last %}, {% endunless %}
         {% endfor %}
       </p>
+      {% endif %}
+      {% if project.description %}
+      <p class="project-description">{{ project.description }}</p>
+      {% endif %}
       {% if project.footnote %}
       <p class="project-footnote">{{ project.footnote }}</p>
       {% endif %}
       <p class="project-links">
         {% if project.arxiv_abs %}<a class="custom-link" href="{{ project.arxiv_abs }}">arXiv</a>{% endif %}
-        {% if project.arxiv_pdf %}<span class="link-sep" aria-hidden="true">·</span><a class="custom-link" href="{{ project.arxiv_pdf }}">PDF</a>{% endif %}
+        {% if project.arxiv_pdf %}{% if project.arxiv_abs %}<span class="link-sep" aria-hidden="true">·</span>{% endif %}<a class="custom-link" href="{{ project.arxiv_pdf }}">{% if project.arxiv_abs %}PDF{% else %}arXiv{% endif %}</a>{% endif %}
         {% if project.project_page %}<span class="link-sep" aria-hidden="true">·</span><a class="custom-link" href="{{ project.project_page }}">project page</a>{% endif %}
-        {% if project.code_url %}<span class="link-sep" aria-hidden="true">·</span><a class="custom-link" href="{{ project.code_url }}">code</a>{% endif %}
+        {% if project.code_url %}{% if project.arxiv_abs or project.arxiv_pdf or project.project_page %}<span class="link-sep" aria-hidden="true">·</span>{% endif %}<a class="custom-link" href="{{ project.code_url }}">{{ project.code_label | default: "code" }}</a>{% endif %}
       </p>
     </div>
   </article>
