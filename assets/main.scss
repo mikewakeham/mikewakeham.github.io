@@ -1,0 +1,31 @@
+---
+---
+
+/* Set before @import so Minima’s `!default` keeps #fff (theme default is #fdfdfd) */
+$background-color: #fff;
+
+@import "minima";
+
+html {
+  background-color: $background-color;
+}
+
+/* Minima’s grey top bar reads as “off‑white”; match page background */
+.site-header {
+  border-top: 5px solid $background-color;
+}
+
+@media screen and (max-width: 600px) {
+  .site-nav {
+    background-color: $background-color;
+  }
+}
+
+/* Backup if head include is missing; `head.html` also forces white after main.css */
+html,
+body {
+  background-color: #ffffff !important;
+}
+.site-header {
+  border-top-color: #ffffff !important;
+}

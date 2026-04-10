@@ -1,0 +1,51 @@
+# Research projects (shown on the home page, newest first).
+#
+# Add a new paper: duplicate the YAML block starting with "- id: ..." and paste above
+# or below other entries (order = display order; newest first is typical).
+#
+# Fields:
+#   id            — short slug for HTML id (e.g. my-paper-name)
+#   teaser        — image path from site root: assets/images/foo.png
+#   title         — full paper title (quoted if it has colons)
+#   venue         — e.g. CVPR 2026
+#   arxiv_abs     — https://arxiv.org/abs/XXXX (optional)
+#   arxiv_pdf     — https://arxiv.org/pdf/XXXX.pdf (optional)
+#   project_page  — project website (optional)
+#   code_url      — GitHub or other code link (optional; omit key if none)
+#   authors       — list of { name: "...", url: "...", self: true, mark: "..." }
+#                   url optional; self: true = your name (underlined, no link); mark optional
+#   footnote      — optional line under authors (equal contrib., etc.)
+#
+
+- id: babyvlm-v2
+  teaser: assets/images/babyvlm_v2.png
+  title: "BabyVLM-V2: Toward Developmentally Grounded Pretraining and Benchmarking of Vision Foundation Models"
+  venue: CVPR 2026
+  arxiv_abs: https://arxiv.org/abs/2512.10932
+  arxiv_pdf: https://arxiv.org/pdf/2512.10932
+  project_page: https://shawnking98.github.io/BabyVLM-v2/
+  authors:
+    - { name: "Shengao Wang", url: "https://shawnking98.github.io/", mark: "*†" }
+    - { name: "Wenqi Wang", url: "https://wqwang.me/", mark: "*" }
+    - { name: "Zecheng Wang", url: "https://victor-wang-902.github.io/", mark: "*" }
+    - { name: "Max Whitton", url: "https://www.linkedin.com/in/max-whitton-9b648a222/", mark: "*" }
+    - { name: "Michael Wakeham", self: true }
+    - { name: "Arjun Chandra", url: "https://arjunchandra2.github.io/" }
+    - { name: "Joey Huang", url: "https://www.linkedin.com/in/joey-t-huang/" }
+    - { name: "Pengyue Zhu", url: "https://www.linkedin.com/in/pengyuez/" }
+    - { name: "Helen Chen", mark: "‡" }
+    - { name: "David Li", mark: "‡" }
+    - { name: "Jeffrey Li", mark: "‡" }
+    - { name: "Shawn L. Li", mark: "‡" }
+    - { name: "Andrew Zagula", mark: "‡" }
+    - { name: "Amy Zhao", mark: "‡" }
+    - { name: "Andrew Zhu", mark: "‡" }
+    - { name: "Sayaka Nakamura" }
+    - { name: "Yuki Yamamoto" }
+    - { name: "Jerry Jun Yokono" }
+    - { name: "Aaron Mueller", url: "https://aaronmueller.github.io/" }
+    - { name: "Bryan A. Plummer", url: "https://bryanplummer.com/" }
+    - { name: "Kate Saenko", url: "https://ai.bu.edu/ksaenko.html" }
+    - { name: "Venkatesh Saligrama", url: "https://venkatesh-saligrama.github.io/" }
+    - { name: "Boqing Gong", url: "https://boqinggong.github.io/" }
+  footnote: "*Equal contribution. †Project lead. ‡Equal contribution; work done as interns at Boston University."

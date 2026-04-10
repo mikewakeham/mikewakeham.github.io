@@ -1,0 +1,20 @@
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  {%- seo -%}
+  <link rel="stylesheet" href="{{ "/assets/main.css" | relative_url }}">
+  <style id="site-bg-white">
+    /* After main.css: force #fff (Minima default #fdfdfd; some browsers tint “white”) */
+    html { color-scheme: light; background-color: #ffffff !important; }
+    body { background-color: #ffffff !important; }
+    .site-header { border-top-color: #ffffff !important; }
+    @media screen and (max-width: 600px) {
+      .site-nav { background-color: #ffffff !important; }
+    }
+  </style>
+  {%- feed_meta -%}
+  {%- if jekyll.environment == 'production' and site.google_analytics -%}
+    {%- include google-analytics.html -%}
+  {%- endif -%}
+</head>
