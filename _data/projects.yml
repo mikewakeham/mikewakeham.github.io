@@ -55,7 +55,6 @@
 - id: panorama
   teaser_video: assets/images/panorama_teaser.mp4
   title: "Panoramic Generation for Perspective Videos with Camera Motion"
-  venue: In progress...
   description: "3D-driven training-free method for panoramic outpainting of regular perspective videos with camera motion + static scene."
   code_url: https://github.com/mikewakeham/pano
   code_label: "code (outdated)"
