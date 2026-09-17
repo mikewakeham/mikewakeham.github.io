@@ -17,6 +17,9 @@
 #   code_label    — optional link text (default: code), e.g. "code (outdated)"
 #   authors       — list of { name: "...", url: "...", self: true, mark: "..." }
 #                   url optional; self: true = your name (underlined, no link); mark optional
+#   author_links  — set false to render author names as plain text while retaining their URLs
+#   collapsed_authors — optional middle section of a long author list, hidden behind a toggle
+#   authors_after — authors shown after collapsed_authors
 #   footnote      — optional line under authors (equal contrib., etc.)
 #
 
@@ -26,6 +29,7 @@
   venue: CVPR 2026
   arxiv_pdf: https://arxiv.org/pdf/2512.10932
   project_page: https://shawnking98.github.io/BabyVLM-v2/
+  author_links: false
   authors:
     - { name: "Shengao Wang", url: "https://shawnking98.github.io/", mark: "*†" }
     - { name: "Wenqi Wang", url: "https://wqwang.me/", mark: "*" }
@@ -33,28 +37,38 @@
     - { name: "Max Whitton", url: "https://www.linkedin.com/in/max-whitton-9b648a222/", mark: "*" }
     - { name: "Michael Wakeham", self: true }
     - { name: "Arjun Chandra", url: "https://arjunchandra2.github.io/" }
-    - { name: "Joey Huang", url: "https://www.linkedin.com/in/joey-t-huang/" }
-    - { name: "Pengyue Zhu", url: "https://www.linkedin.com/in/pengyuez/" }
-    - { name: "Helen Chen", mark: "‡" }
-    - { name: "David Li", mark: "‡" }
-    - { name: "Jeffrey Li", mark: "‡" }
-    - { name: "Shawn L. Li", mark: "‡" }
-    - { name: "Andrew Zagula", mark: "‡" }
-    - { name: "Amy Zhao", mark: "‡" }
-    - { name: "Andrew Zhu", mark: "‡" }
+    - { name: "Joey Huang" }
+    - { name: "Pengyue Zhu" }
+  collapsed_authors:
+    - { name: "Helen Chen" }
+    - { name: "David Li" }
+    - { name: "Jeffrey Li" }
+    - { name: "Shawn L. Li" }
+    - { name: "Andrew Zagula" }
+    - { name: "Amy Zhao" }
+    - { name: "Andrew Zhu" }
     - { name: "Sayaka Nakamura" }
     - { name: "Yuki Yamamoto" }
     - { name: "Jerry Jun Yokono" }
+  authors_after:
     - { name: "Aaron Mueller", url: "https://aaronmueller.github.io/" }
     - { name: "Bryan A. Plummer", url: "https://bryanplummer.com/" }
     - { name: "Kate Saenko", url: "https://ai.bu.edu/ksaenko.html" }
     - { name: "Venkatesh Saligrama", url: "https://venkatesh-saligrama.github.io/" }
     - { name: "Boqing Gong", url: "https://boqinggong.github.io/" }
-  footnote: "*Equal contribution. †Project lead. ‡Equal contribution; work done as interns at Boston University."
+  footnote: "*Equal contribution. †Project lead."
 
 - id: panorama
   teaser_video: assets/images/panorama_teaser.mp4
-  title: "Panoramic Generation for Perspective Videos with Camera Motion"
-  description: "3D-driven training-free method for panoramic outpainting of regular perspective videos with camera motion + static scene."
-  code_url: https://github.com/mikewakeham/pano
-  code_label: "code (outdated)"
+  title: "A 3D-Driven Framework for Moving-Camera Perspective-to-360° Video Generation"
+  authors:
+    - { name: "Michael Wakeham", self: true }
+    - { name: "Mrinmoy Kumar Das" }
+    - { name: "Wenqi Wang" }
+    - { name: "Ayush Tewari" }
+    - { name: "Boqing Gong" }
+    - { name: "Deepti Ghadiyaram" }
+  # arxiv_pdf: coming soon
+  project_page: https://mikewakeham.github.io/pano3d/
+  # code_url: https://github.com/mikewakeham/pano
+  # code_label: "code (outdated)"
