@@ -7,3 +7,8 @@
 .site-header {
   border-top: 0;
 }
+
+/* The site has no navigation links, so suppress Minima's empty mobile menu. */
+.site-nav {
+  display: none;
+}
