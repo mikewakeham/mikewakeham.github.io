@@ -37,9 +37,9 @@
     - { name: "Max Whitton", url: "https://www.linkedin.com/in/max-whitton-9b648a222/", mark: "*" }
     - { name: "Michael Wakeham", self: true }
     - { name: "Arjun Chandra", url: "https://arjunchandra2.github.io/" }
+  collapsed_authors:
     - { name: "Joey Huang" }
     - { name: "Pengyue Zhu" }
-  collapsed_authors:
     - { name: "Helen Chen" }
     - { name: "David Li" }
     - { name: "Jeffrey Li" }
@@ -50,9 +50,9 @@
     - { name: "Sayaka Nakamura" }
     - { name: "Yuki Yamamoto" }
     - { name: "Jerry Jun Yokono" }
-  authors_after:
     - { name: "Aaron Mueller", url: "https://aaronmueller.github.io/" }
     - { name: "Bryan A. Plummer", url: "https://bryanplummer.com/" }
+  authors_after:
     - { name: "Kate Saenko", url: "https://ai.bu.edu/ksaenko.html" }
     - { name: "Venkatesh Saligrama", url: "https://venkatesh-saligrama.github.io/" }
     - { name: "Boqing Gong", url: "https://boqinggong.github.io/" }
@@ -69,6 +69,8 @@
     - { name: "Boqing Gong" }
     - { name: "Deepti Ghadiyaram" }
   # arxiv_pdf: coming soon
+  # venue: WACV 2027
+  venue: Under review
   project_page: https://mikewakeham.github.io/pano3d/
   # code_url: https://github.com/mikewakeham/pano
   # code_label: "code (outdated)"

@@ -1,0 +1,10 @@
+<section class="news-section" aria-labelledby="news-heading">
+  <h2 id="news-heading" class="news-heading">News</h2>
+  <div class="news-scroll">
+    <ul class="news-list">
+      {% for item in site.data.news %}
+      <li><span class="news-entry"><span class="news-date">[{{ item.date }}]</span><span>{{ item.text }}</span></span></li>
+      {% endfor %}
+    </ul>
+  </div>
+</section>

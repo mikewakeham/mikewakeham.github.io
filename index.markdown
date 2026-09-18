@@ -30,15 +30,14 @@ title: Home
       </button>
       -->
       <a class="custom-link" href="mailto:mwakeham@bu.edu">Email</a>
-      <span class="link-sep" aria-hidden="true">·</span>
       <a class="custom-link" href="{{ '/assets/images/Michael_Wakeham_CV.pdf' | relative_url }}">CV</a>
-      <span class="link-sep" aria-hidden="true">·</span>
       <a class="custom-link" href="https://scholar.google.com/citations?user=jHfzgugAAAAJ&amp;hl=en">Google Scholar</a>
-      <span class="link-sep" aria-hidden="true">·</span>
       <a class="custom-link" href="https://www.linkedin.com/in/mikewakeham/">LinkedIn</a>
     </p>
   </div>
 </div>
+
+<!-- {% include news.html %} -->
 
 {% include research-projects.html %}
 
@@ -80,7 +79,7 @@ title: Home
   }
 
   /* ── Page wrapper (widen for research section) ──── */
-  .page-content .wrapper { max-width: 990px; }
+  .page-content .wrapper { max-width: 775px; }
 
   /* ── Profile block ──────────────────────────────── */
   .profile-container {
@@ -143,6 +142,7 @@ title: Home
   .profile-para-gap  { margin-top: 1rem; }
   .profile-links     { margin-top: 1rem; line-height: 1.6; text-align: left; }
   .profile-links .link-sep { color: #111; }
+  .profile-links .custom-link + .custom-link { margin-left: 0.75em; }
   /* Copyable email UI styles (disabled; retained for possible restoration)
   .profile-email { color: #555; }
   .copy-email {
@@ -183,6 +183,83 @@ title: Home
     border-radius: 2px;
   }
   */
+
+  /* ── News section ──────────────────────────────── */
+  .news-section {
+    max-width: 575px;
+    margin: 1.5rem 0 0;
+  }
+  .news-heading {
+    margin: 0 0 0.4rem;
+    color: #111;
+    font-size: 1.15rem;
+    font-weight: 500;
+    line-height: 1.3;
+  }
+  .news-list {
+    list-style: none;
+    margin: 0;
+    padding: 0.55rem 0.7rem 0.55rem 0.2rem;
+    max-height: 7.75rem;
+    overflow-y: auto;
+    box-sizing: border-box;
+    scrollbar-gutter: stable;
+    scrollbar-width: auto;
+    scrollbar-color: auto;
+    direction: rtl;
+  }
+  .news-list::-webkit-scrollbar {
+    width: 8px;
+  }
+  .news-list::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  .news-list::-webkit-scrollbar-thumb {
+    background-color: #b8b8b8;
+    background-clip: content-box;
+    border: 2px solid transparent;
+    border-radius: 999px;
+  }
+  .news-list::-webkit-scrollbar-thumb:hover {
+    background-color: #999;
+  }
+  .news-scroll {
+    position: relative;
+  }
+  .news-scroll::after {
+    content: "";
+    position: absolute;
+    z-index: 1;
+    right: 0.7rem;
+    bottom: 0;
+    left: 0.7rem;
+    height: 0.5rem;
+    background: linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 0),
+      rgba(255, 255, 255, 0.08) 45%,
+      rgba(255, 255, 255, 0.35) 75%,
+      #fff 100%
+    );
+    pointer-events: none;
+  }
+  .news-list li {
+    margin: 0.15rem 0;
+    color: #333;
+    font-size: 1rem;
+    line-height: 1.45;
+    direction: ltr;
+  }
+  .news-entry {
+    display: grid;
+    grid-template-columns: 5.25rem minmax(0, 1fr);
+    column-gap: 0.0rem;
+    align-items: start;
+  }
+  .news-date {
+    color: #666;
+    white-space: nowrap;
+  }
 
   /* ── Research section ───────────────────────────── */
   .research-section {
