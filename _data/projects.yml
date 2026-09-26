@@ -23,8 +23,25 @@
 #   footnote      — optional line under authors (equal contrib., etc.)
 #
 
+- id: panorama
+  teaser_video: assets/images/panorama_teaser.mp4
+  title: "A 3D-Driven Framework for Moving-Camera Perspective-to-360° Video Generation"
+  authors:
+    - { name: "Michael Wakeham", self: true }
+    - { name: "Mrinmoy Kumar Das" }
+    - { name: "Wenqi Wang" }
+    - { name: "Ayush Tewari" }
+    - { name: "Boqing Gong" }
+    - { name: "Deepti Ghadiyaram" }
+  # arxiv_pdf: coming soon
+  # venue: WACV 2027
+  venue: Under review
+  project_page: https://mikewakeham.github.io/pano3d/
+  # code_url: https://github.com/mikewakeham/pano
+  # code_label: "code (outdated)"
+
 - id: babyvlm-v2
-  teaser: assets/images/babyvlm_v2_transparent.png
+  teaser: assets/images/babyvlm_v2.png
   title: "BabyVLM-V2: Toward Developmentally Grounded Pretraining and Benchmarking of Vision Foundation Models"
   venue: CVPR 2026
   arxiv_pdf: https://arxiv.org/pdf/2512.10932
@@ -58,19 +75,29 @@
     - { name: "Boqing Gong", url: "https://boqinggong.github.io/" }
   footnote: "*Equal contribution. †Project lead."
 
-- id: panorama
-  teaser_video: assets/images/panorama_teaser.mp4
-  title: "A 3D-Driven Framework for Moving-Camera Perspective-to-360° Video Generation"
-  authors:
-    - { name: "Michael Wakeham", self: true }
-    - { name: "Mrinmoy Kumar Das" }
-    - { name: "Wenqi Wang" }
-    - { name: "Ayush Tewari" }
-    - { name: "Boqing Gong" }
-    - { name: "Deepti Ghadiyaram" }
-  # arxiv_pdf: coming soon
-  # venue: WACV 2027
-  venue: Under review
-  project_page: https://mikewakeham.github.io/pano3d/
-  # code_url: https://github.com/mikewakeham/pano
-  # code_label: "code (outdated)"
+# Clownfish project (disabled until acceptance)
+# - id: clownfish-tracking
+#   teaser: assets/images/fish-horizontal.png
+#   title: "Who’s Who in the Anemone? A Benchmark for Clownfish Tracking in the Wild"
+#   venue: TCCML Workshop @ NeurIPS 2026
+#   author_links: false
+#   authors:
+#     - { name: "Owen Chau", mark: "*" }
+#     - { name: "Alexander Gou", mark: "*" }
+#     - { name: "Ruta Sirdeshmukh", mark: "*" }
+#     - { name: "Sarah Zhou", mark: "*" }
+#     - { name: "Michael Wakeham", self: true, mark: "†" }
+#     - { name: "Tuan Truong" }
+#   collapsed_authors:
+#     - { name: "Logan Lawrence" }
+#     - { name: "Andy Zhang" }
+#     - { name: "Veronika Tio" }
+#     - { name: "Jaahnavi Tirumala" }
+#     - { name: "Arjun Chandra" }
+#   authors_after:
+#     - { name: "Fritz Francisco" }
+#     - { name: "Peter Buston" }
+#     - { name: "Boqing Gong" }
+#   footnote: "*Equal contribution. †Corresponding author."
+#   code_url: "https://openreview.net/attachment?id=Epue4g4En5&name=pdf"
+#   code_label: "placeholder"

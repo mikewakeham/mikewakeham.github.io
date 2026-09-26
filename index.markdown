@@ -6,7 +6,7 @@ title: Home
 <div class="profile-container">
   <div class="profile-image">
     <div class="profile-photo-toggle">
-      <img class="profile-photo profile-photo-primary" src="{{ '/assets/images/profile.png' | relative_url }}" alt="Michael Wakeham">
+      <img class="profile-photo profile-photo-primary" src="{{ '/assets/images/profile.png' | relative_url }}?v=20260926" alt="Michael Wakeham">
       <img class="profile-photo profile-photo-stadium" src="{{ '/assets/images/white_hart_lane.jpg' | relative_url }}" alt="White Hart Lane">
     </div>
     <span class="profile-photo-caption">White Hart Lane 2017</span>
@@ -115,8 +115,8 @@ title: Home
     object-fit: cover;
     display: block;
   }
-  .profile-photo-primary { opacity: 1; }
-  .profile-photo-stadium { opacity: 0; }
+  .profile-photo-primary { opacity: 1; visibility: visible; }
+  .profile-photo-stadium { opacity: 0; visibility: hidden; pointer-events: none; }
   .profile-photo-caption {
     position: absolute;
     top: -1.45rem;
@@ -130,9 +130,17 @@ title: Home
     transform: translateX(-50%);
     pointer-events: none;
   }
-  .profile-photo-toggle.is-showing-stadium .profile-photo-primary { opacity: 0; }
+  .profile-photo-toggle.is-showing-stadium .profile-photo-primary {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+  }
   .profile-photo-toggle.is-showing-stadium .profile-photo-stadium,
   .profile-photo-toggle.is-showing-stadium + .profile-photo-caption { opacity: 1; }
+  .profile-photo-toggle.is-showing-stadium .profile-photo-stadium {
+    visibility: visible;
+    pointer-events: auto;
+  }
   .profile-text {
     flex: 1;
     min-width: 200px;
@@ -200,7 +208,7 @@ title: Home
     list-style: none;
     margin: 0;
     padding: 0.55rem 0.7rem 0.55rem 0.2rem;
-    max-height: 7.75rem;
+    max-height: 10.75rem;
     overflow-y: auto;
     box-sizing: border-box;
     scrollbar-gutter: stable;
@@ -302,7 +310,13 @@ title: Home
     box-shadow: 0 1px 4px rgba(0,0,0,.12);
     background: transparent;
   }
-  .project-teaser img { width: 100%; height: auto; display: block; mix-blend-mode: multiply; }
+  #project-babyvlm-v2 .project-teaser-inner,
+  #project-clownfish-tracking .project-teaser-inner {
+    padding: 5px;
+    background: #fff;
+    box-sizing: border-box;
+  }
+  .project-teaser img { width: 100%; height: auto; display: block; image-rendering: auto; }
   .project-teaser-video { width: 100%; height: auto; display: block; }
 
   .project-body  { flex: 1; min-width: 200px; }
