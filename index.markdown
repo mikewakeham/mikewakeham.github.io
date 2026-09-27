@@ -15,7 +15,7 @@ title: Home
     <h1 style="font-weight: 500;">Michael Wakeham</h1>
     <p>Hello! I'm an undergraduate student studying computer science at Boston University, where I work with Prof. <a class="custom-link" href="https://boqinggong.github.io/">Boqing Gong</a> and Prof. <a class="custom-link" href="https://deeptigp.github.io/">Deepti Ghadiyaram</a>. I'm also a visiting research intern at Kempner Institute, working with Prof. <a class="custom-link" href="https://qianqianwang68.github.io/">Qianqian Wang</a> and Dr. <a class="custom-link" href="https://ruojincai.github.io/">Ruojin Cai</a></p>
     <!-- <p class="profile-para-gap">My research interests are in computer vision and machine learning. More specifically, I like 3D vision, vision language models, and generative models</p> -->
-    <p class="profile-para-gap">My research interests are in computer vision and machine learning. More specifically, I am interested in understanding, representing, and generating the 3D/4D world from incomplete observation.</p>
+    <p class="profile-para-gap">My research interests are broadly in machine learning and computer vision. More specifically, I am interested in understanding and modeling the 3D/4D world, cognitively inspired approaches to visual perception, and controllable visual media generation.</p>
     <p class="profile-links">
       <!-- Copyable email UI (disabled; retained in case it is restored later)
       <span class="profile-email">mwakeham@bu.edu</span>
