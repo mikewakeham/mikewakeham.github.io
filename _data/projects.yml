@@ -98,5 +98,5 @@
     - { name: "Peter Buston" }
     - { name: "Boqing Gong" }
   footnote: "*Equal contribution. †Corresponding author."
-  code_url: "https://openreview.net/attachment?id=Epue4g4En5&name=pdf"
-  code_label: "placeholder"
+  code_url: "/assets/papers/clownfish-tracking.pdf"
+  code_label: "paper"
