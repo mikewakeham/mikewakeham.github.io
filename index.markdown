@@ -37,7 +37,7 @@ title: Home
   </div>
 </div>
 
-<!-- {% include news.html %} -->
+{% include news.html %}
 
 {% include research-projects.html %}
 

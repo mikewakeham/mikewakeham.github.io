@@ -75,29 +75,28 @@
     - { name: "Boqing Gong", url: "https://boqinggong.github.io/" }
   footnote: "*Equal contribution. †Project lead."
 
-# Clownfish project (disabled until acceptance)
-# - id: clownfish-tracking
-#   teaser: assets/images/fish-horizontal.png
-#   title: "Who’s Who in the Anemone? A Benchmark for Clownfish Tracking in the Wild"
-#   venue: TCCML Workshop @ NeurIPS 2026
-#   author_links: false
-#   authors:
-#     - { name: "Owen Chau", mark: "*" }
-#     - { name: "Alexander Gou", mark: "*" }
-#     - { name: "Ruta Sirdeshmukh", mark: "*" }
-#     - { name: "Sarah Zhou", mark: "*" }
-#     - { name: "Michael Wakeham", self: true, mark: "†" }
-#     - { name: "Tuan Truong" }
-#   collapsed_authors:
-#     - { name: "Logan Lawrence" }
-#     - { name: "Andy Zhang" }
-#     - { name: "Veronika Tio" }
-#     - { name: "Jaahnavi Tirumala" }
-#     - { name: "Arjun Chandra" }
-#   authors_after:
-#     - { name: "Fritz Francisco" }
-#     - { name: "Peter Buston" }
-#     - { name: "Boqing Gong" }
-#   footnote: "*Equal contribution. †Corresponding author."
-#   code_url: "https://openreview.net/attachment?id=Epue4g4En5&name=pdf"
-#   code_label: "placeholder"
+- id: clownfish-tracking
+  teaser: assets/images/fish-horizontal.png
+  title: "Who’s Who in the Anemone? A Benchmark for Clownfish Tracking in the Wild"
+  venue: TCCML Workshop @ NeurIPS 2026
+  author_links: false
+  authors:
+    - { name: "Owen Chau", mark: "*" }
+    - { name: "Alexander Gou", mark: "*" }
+    - { name: "Ruta Sirdeshmukh", mark: "*" }
+    - { name: "Sarah Zhou", mark: "*" }
+    - { name: "Michael Wakeham", self: true, mark: "†" }
+    - { name: "Tuan Truong" }
+  collapsed_authors:
+    - { name: "Logan Lawrence" }
+    - { name: "Andy Zhang" }
+    - { name: "Veronika Tio" }
+    - { name: "Jaahnavi Tirumala" }
+    - { name: "Arjun Chandra" }
+  authors_after:
+    - { name: "Fritz Francisco" }
+    - { name: "Peter Buston" }
+    - { name: "Boqing Gong" }
+  footnote: "*Equal contribution. †Corresponding author."
+  code_url: "https://openreview.net/attachment?id=Epue4g4En5&name=pdf"
+  code_label: "placeholder"
