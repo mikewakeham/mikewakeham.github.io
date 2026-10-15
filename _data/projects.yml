@@ -34,8 +34,7 @@
     - { name: "Boqing Gong" }
     - { name: "Deepti Ghadiyaram" }
   # arxiv_pdf: coming soon
-  # venue: WACV 2027
-  venue: Under review
+  venue: WACV 2027
   project_page: https://mikewakeham.github.io/pano3d/
   # code_url: https://github.com/mikewakeham/pano
   # code_label: "code (outdated)"

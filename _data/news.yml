@@ -1,7 +1,7 @@
 # News shown on the home page, newest first.
 
-# - date: "2026.10"
-#   text: "Our work on 3D-driven perspective-to-360° video generation has been accepted to WACV 2027!"
+- date: "2026.10"
+  text: "Our work on 3D-driven perspective-to-360° video generation has been accepted to WACV 2027!"
 
 - date: "2026.09"
   text: "The BU RISE students i mentored this summer had their workshop paper accepted to TCCML @ NeurIPS 2026!"
