@@ -30,7 +30,7 @@ title: Home
       </button>
       -->
       <a class="custom-link" href="mailto:mwakeham@bu.edu">Email</a>
-      <a class="custom-link" href="{{ '/assets/images/Michael_Wakeham_CV.pdf' | relative_url }}">CV</a>
+      <a class="custom-link" href="{{ '/assets/Michael_Wakeham_CV.pdf' | relative_url }}">CV</a>
       <a class="custom-link" href="https://scholar.google.com/citations?user=jHfzgugAAAAJ&amp;hl=en">Google Scholar</a>
       <a class="custom-link" href="https://www.linkedin.com/in/mikewakeham/">LinkedIn</a>
     </p>

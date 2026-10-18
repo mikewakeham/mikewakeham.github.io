@@ -47,7 +47,7 @@
   project_page: https://shawnking98.github.io/BabyVLM-v2/
   author_links: false
   authors:
-    - { name: "Shengao Wang", url: "https://shawnking98.github.io/", mark: "*†" }
+    - { name: "Shengao Wang", url: "https://shawnking98.github.io/", mark: "*" }
     - { name: "Wenqi Wang", url: "https://wqwang.me/", mark: "*" }
     - { name: "Zecheng Wang", url: "https://victor-wang-902.github.io/", mark: "*" }
     - { name: "Max Whitton", url: "https://www.linkedin.com/in/max-whitton-9b648a222/", mark: "*" }
@@ -72,7 +72,7 @@
     - { name: "Kate Saenko", url: "https://ai.bu.edu/ksaenko.html" }
     - { name: "Venkatesh Saligrama", url: "https://venkatesh-saligrama.github.io/" }
     - { name: "Boqing Gong", url: "https://boqinggong.github.io/" }
-  footnote: "*Equal contribution. †Project lead."
+  footnote: "*Equal contribution."
 
 - id: clownfish-tracking
   teaser: assets/images/fish-horizontal.png
