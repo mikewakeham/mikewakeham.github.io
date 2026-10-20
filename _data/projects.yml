@@ -33,7 +33,7 @@
     - { name: "Ayush Tewari" }
     - { name: "Boqing Gong" }
     - { name: "Deepti Ghadiyaram" }
-  # arxiv_pdf: coming soon
+  arxiv_abs: https://arxiv.org/abs/2610.25395
   venue: WACV 2027
   project_page: https://pano3d-video.github.io/
   # code_url: https://github.com/mikewakeham/pano
