@@ -36,8 +36,7 @@
   arxiv_abs: https://arxiv.org/abs/2610.25395
   venue: WACV 2027
   project_page: https://pano3d-video.github.io/
-  # code_url: https://github.com/mikewakeham/pano
-  # code_label: "code (outdated)"
+  code_url: https://github.com/mikewakeham/pano3d-video
 
 - id: babyvlm-v2
   teaser: assets/images/babyvlm_v2.png
