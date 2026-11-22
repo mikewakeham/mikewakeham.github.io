@@ -104,8 +104,9 @@ title: Home
     overflow: hidden;
     border-radius: 8px;
     background: none;
-    cursor: default;
+    cursor: pointer;
   }
+  .profile-photo-toggle.was-clicked { cursor: default; }
   .profile-photo {
     position: absolute;
     inset: 0;
@@ -392,7 +393,7 @@ title: Home
 
     function showStadium() {
       window.clearTimeout(resetTimer);
-      button.classList.add('is-showing-stadium');
+      button.classList.add('is-showing-stadium', 'was-clicked');
 
       resetTimer = window.setTimeout(function () {
         button.classList.remove('is-showing-stadium');
